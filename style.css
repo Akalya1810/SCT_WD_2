@@ -1,0 +1,100 @@
+/* Base & Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  margin-top: 60px;
+  padding: 30px;
+  background: #fff9c4;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #009688;
+}
+
+.emoji {
+  font-size: 1.8rem;
+  margin: 10px 0 20px;
+}
+
+/* Stopwatch */
+.stopwatch {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #3f51b5;
+  background: #e3f2fd;
+  padding: 20px 40px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.buttons button {
+  background: #00bcd4;
+  border: none;
+  color: white;
+  padding: 12px 18px;
+  margin: 8px 5px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.buttons button:hover {
+  background: #0288d1;
+}
+
+/* Laps Section */
+.laps {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.laps h3 {
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+#lapList {
+  list-style-type: decimal;
+  padding-left: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#lapList li {
+  padding: 5px 0;
+  color: #555;
+  border-bottom: 1px dashed #ccc;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  padding: 20px;
+  background: #009688;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+}
