@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>⏱️ Stopwatch App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>⏱️ Creative Stopwatch</h1>
+    <p class="emoji">🕒 ⌛ 🏁</p>
+
+    <div class="stopwatch">
+      <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+    </div>
+
+    <div class="buttons">
+      <button onclick="startStopwatch()">▶️ Start</button>
+      <button onclick="stopStopwatch()">⏸️ Stop</button>
+      <button onclick="resetStopwatch()">🔄 Reset</button>
+      <button onclick="recordLap()">🏁 Lap</button>
+    </div>
+
+    <div class="laps">
+      <h3>📋 Lap Records</h3>
+      <ul id="lapList"></ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made with ❤️ by Akalya • Task 2 – SkillCraft Internship</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
